@@ -1,0 +1,48 @@
+자료구조 3주차 과제 2 (3차원 배열을 이용해 문자배열 입출력하기)
+#include <stdio.h>
+
+int main(void) {
+	char student[2][3][20];
+
+	for (int i = 0; i < 2; i++) {
+		printf("학생 %d의 이름 : ", (i + 1));
+		gets(student[i][0]);
+
+		printf("학생 %d의 학과 : ", (i + 1));
+		gets(student[i][1]);
+
+		printf("학생 %d의 학번 : ", (i + 1));
+		gets(student[i][2]);
+
+		printf("\n");
+	}
+
+	printf("\n");
+
+	for (int i = 0; i < 2; i++) {
+		printf("학생 %d\n", i + 1);
+		for (int j = 0; j < 3; j++) {
+			printf("\t%s\n", student[i][j]);
+		}
+	}
+	return 0;
+}
+
+결과 :
+학생 1의 이름 : Hong Gil Dong
+학생 1의 학과 : Computer Electronic
+학생 1의 학번 : 202100101
+
+학생 2의 이름 : Hong Gil Soon
+학생 2의 학과 : Computer Science
+학생 2의 학번 : 202100201
+
+
+학생 1
+        Hong Gil Dong
+        Computer Electronic
+        202100101
+학생 2
+        Hong Gil Soon
+        Computer Science
+        202100201
