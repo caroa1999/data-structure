@@ -1,0 +1,45 @@
+// 자료구조 3주차 과제 1
+#include <stdio.h>
+
+
+int main(void) {
+	int array[2][3][4];
+	int result = 1;
+
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++) {
+			for (int k = 0; k < 4; k++) {
+				array[i][j][k] = result++;
+				printf("array[%d][%d][%d] = %d \n", i, j, k, array[i][j][k]);
+			}
+		}
+	}
+
+	return 0;
+}
+
+결과 :
+array[0][0][0] = 1
+array[0][0][1] = 2
+array[0][0][2] = 3
+array[0][0][3] = 4
+array[0][1][0] = 5
+array[0][1][1] = 6
+array[0][1][2] = 7
+array[0][1][3] = 8
+array[0][2][0] = 9
+array[0][2][1] = 10
+array[0][2][2] = 11
+array[0][2][3] = 12
+array[1][0][0] = 13
+array[1][0][1] = 14
+array[1][0][2] = 15
+array[1][0][3] = 16
+array[1][1][0] = 17
+array[1][1][1] = 18
+array[1][1][2] = 19
+array[1][1][3] = 20
+array[1][2][0] = 21
+array[1][2][1] = 22
+array[1][2][2] = 23
+array[1][2][3] = 24
