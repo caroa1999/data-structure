@@ -1,4 +1,4 @@
-list.h
+listS.h
 
 #pragma once
 #define MAX 10
@@ -7,7 +7,7 @@ int insertElement(int L[], int n, int x);
 int deleteElement(int L[], int n, int x);
 
 ;;
-list.c
+listS.c
 
 #include "listS.h"
 int insertElement(int L[], int n, int x) {
