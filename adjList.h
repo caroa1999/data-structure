@@ -1,5 +1,8 @@
 #pragma once
 #define max_vertex 30
+#define false 0
+#define true 1
+
 
 // 인접 리스트의 노드 구조를 구조체로 정의
 typedef struct graphnode {
@@ -12,6 +15,7 @@ typedef struct graphnode {
 typedef struct graphtype {
 	int n;
 	graphnode* adjList_h[max_vertex];
+	int visited[max_vertex];
 }graphtype;
 
 void createGraph(graphtype* g);
